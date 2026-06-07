@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>11 East Street Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!-- Dark Red background that fades in during Phase 2 -->
+    <div id="dark-red-wash" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #d12727; z-index: -1; opacity: 0; pointer-events: none; will-change: opacity;"></div>
+
+
+
+    <!-- Persistent Navbar that the sign seamlessly swaps with -->
+    <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-logo" style="text-decoration: none;">
+            <div class="black-panels">
+                <div class="black-panel left-panel">
+                    <div class="sign-11">11</div>
+                    <div class="yellow-line"></div>
+                </div>
+                <div class="black-panel right-panel">
+                    <div class="sign-east">EAST</div>
+                    <div class="sign-street">STREET</div>
+                    <div class="cafe-row">
+                        <div class="yellow-line"></div>
+                        <div class="sign-cafe">CAFÉ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="yellow-banner">LONDON IN PUNE</div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">The Vibe</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+        </div>
+    </nav>
+
+    <!-- Scroll Track (Allows scrolling while keeping the hero pinned) -->
+    <div class="scroll-track">
+        <div class="sticky-hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    
+                    <!-- Bus CSS Art -->
+                    <div id="bus-scale-wrapper">
+                        <div class="bus-wrapper" id="anim-bus">
+                            <div class="inner-bus">
+                            
+                            <!-- UPPER HALF -->
+            <div class="bus-upper">
+                <!-- Roof -->
+                <div class="roof"></div>
+                
+                <!-- Main Body Top -->
+                <div class="upper-body">
+                    <div class="upper-body-bg"></div>
+                    <div class="upper-windows">
+                        <div class="window"></div>
+                        <div class="window"></div>
+                    </div>
+                    
+                    <div class="real-sign-container">
+                        <div class="black-panels">
+                            <div class="black-panel left-panel">
+                                <div class="sign-11">11</div>
+                                <div class="yellow-line"></div>
+                            </div>
+                            <div class="black-panel right-panel">
+                                <div class="sign-east">EAST</div>
+                                <div class="sign-street">STREET</div>
+                                <div class="cafe-row">
+                                    <div class="yellow-line"></div>
+                                    <div class="sign-cafe">CAFÉ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yellow-banner">LONDON IN PUNE</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MID OVERHANG -->
+            <div class="bus-mid-overhang"></div>
+
+            <!-- LOWER HALF -->
+            <div class="bus-lower">
+                <div class="lower-body-bg"></div>
+                
+                <!-- Background Layer (Cab & Alcove) -->
+                <div class="lower-bg-layer">
+                    <div class="side-mirror left-mirror">
+                        <div class="mirror-arm"></div>
+                        <div class="mirror-head"></div>
+                    </div>
+                    
+                    <div class="cab-side">
+                        <div class="cab-window">
+                            <div class="wiper"></div>
+                        </div>
+                        <div class="cab-light"></div>
+                    </div>
+                    
+                    <div class="alcove-side">
+                        <div class="alcove-ceiling-light"></div>
+                        <div class="alcove-windows">
+                            <div class="small-window"></div>
+                            <div class="small-window"></div>
+                        </div>
+                        <div class="alcove-shadow"></div>
+                    </div>
+                    
+                    <div class="side-mirror right-mirror">
+                        <div class="mirror-arm"></div>
+                        <div class="mirror-head"></div>
+                    </div>
+                </div>
+
+                <!-- Foreground Layer (Engine, Fenders, Bumper) -->
+                <div class="lower-fg-layer">
+                    
+                    <div class="fenders-and-hood">
+                        <!-- Left Fender -->
+                        <div class="fender left-fender">
+                            <div class="fender-face">
+                                <div class="indicator small"></div>
+                                <div class="headlight"></div>
+                                <div class="indicator small"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Center Hood -->
+                        <div class="engine-hood">
+                            <div class="hood-face">
+                                <div class="grill">
+                                    <div class="grill-half"></div>
+                                    <div class="grill-divider"></div>
+                                    <div class="grill-half"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Fender -->
+                        <div class="fender right-fender">
+                            <div class="fender-face">
+                                <div class="indicator small"></div>
+                                <div class="headlight"></div>
+                                <div class="indicator small"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bumper -->
+                    <div class="bumper">
+                        <div class="bumper-details">
+                            <div class="license-plate"></div>
+                        </div>
+                        <div class="bumper-bevel"></div>
+                    </div>
+                </div>
+            </div> <!-- End of bus-lower -->
+            
+            <div class="bus-ground-shadow"></div>
+        </div> <!-- End of inner-bus -->
+    </div> <!-- End of bus-wrapper -->
+    
+    <!-- Separate Wheel Layer so they can roll independently -->
+    <div class="bus-wheels" id="anim-wheels">
+        <div class="wheel left-wheel">
+            <div class="rim"></div>
+        </div>
+        <div class="wheel right-wheel">
+            <div class="rim"></div>
+        </div>
+    </div>
+</div> <!-- End of bus-scale-wrapper -->
+
+<!-- Hero Text -->
+<div class="hero-text" id="anim-text">
+    <p class="subtitle">A SLICE OF LONDON IN PUNE</p>
+    <h1 class="title">11 East Street<br><span id="cafe-word">Café</span></h1>
+    <p class="description">Experience the prestige of authentic British heritage fused with modern culinary excellence in the heart of Pune.</p>
+    <a href="about.html" class="cta-button">EXPLORE THE VIBE</a>
+</div>
+        </div> <!-- End hero-content -->
+    </div> <!-- End hero-container -->
+</div> <!-- End sticky-hero -->
+    </div> <!-- End scroll-track -->
+    
+
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-content">
+            <h2 class="welcome-title">Welcome to London</h2>
+            <div class="welcome-divider"></div>
+            <p class="welcome-text">
+                11 East Street Cafe born in 2007 is an iconic establishment in Pune. The double decker bus is a signature attraction of the outlet. 11ESC as it is lovingly called is known to serve a fantastic variety of food. Their bar program is very strong and one has to come over and appreciate the service and food they provide at their all day eatery and bar. 11 East Street Cafe serving you an amazing butter chicken as well as a superb negroni. From indian to oriental to international food, they have it all. Go ahead, call, make a reservation and see what they deliver! IN SERVICE since 2007
+            </p>
+            <a href="about.html" class="welcome-cta">Discover Our Vibe</a>
+        </div>
+    </section>
+
+    <!-- Glimpse of London Polaroid Gallery -->
+    <section class="landing-gallery">
+        <div class="polaroid-track">
+            <div class="polaroid-card tilt-left hidden-scroll">
+                <div class="polaroid-img-wrapper">
+                    <img src="vibe_1.webp" alt="Cafe Interior">
+                </div>
+            </div>
+            <div class="polaroid-card tilt-right hidden-scroll">
+                <div class="polaroid-img-wrapper">
+                    <img src="vibe_3.webp" alt="Vibe Detail">
+                </div>
+            </div>
+            <div class="polaroid-card tilt-left hidden-scroll">
+                <div class="polaroid-img-wrapper">
+                    <img src="vibe_8.webp" alt="Cafe Seating">
+                </div>
+            </div>
+            <div class="polaroid-card tilt-right hidden-scroll">
+                <div class="polaroid-img-wrapper">
+                    <img src="vibe_5.webp" alt="Red Telephone Booth">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Our Guests Say (Reviews Marquee) -->
+    <section class="reviews-section">
+        <h2 class="reviews-title">What Our Guests Say</h2>
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <!-- Group 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">SP</div>
+                        <div class="reviewer-info">
+                            <h4>Shivani Pate</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"I recently visited 11 East Street Café and had a wonderful experience. I tried their pizza, fries, and pasta — everything was absolutely delicious. The service was quick and friendly... Highly recommended!"</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">HK</div>
+                        <div class="reviewer-info">
+                            <h4>Harpreet Kaur</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Great place, london street view and feel, great vibe and the food is also too yumm. If you are bored from normal then just need this a cozy place, with a book shelf within the bus."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">VA</div>
+                        <div class="reviewer-info">
+                            <h4>Vrushali Amte</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Well its one of the best known cafes of Pune and it serves its purpose. The ambience no doubt its very good and food is good as well. We tried thai curry and rice, sandvich and bombay masala lemonade."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">TF</div>
+                        <div class="reviewer-info">
+                            <h4>Talk Over Food</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"From the moment you walk in, you're transported to the streets of London with their stunning London-themed interiors... Definitely a place worth visiting for the ambiance and delicious food!"</p>
+                </div>
+
+                <!-- Group 2 (Duplicate for infinite seamless scrolling) -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">SP</div>
+                        <div class="reviewer-info">
+                            <h4>Shivani Pate</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"I recently visited 11 East Street Café and had a wonderful experience. I tried their pizza, fries, and pasta — everything was absolutely delicious. The service was quick and friendly... Highly recommended!"</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">HK</div>
+                        <div class="reviewer-info">
+                            <h4>Harpreet Kaur</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Great place, london street view and feel, great vibe and the food is also too yumm. If you are bored from normal then just need this a cozy place, with a book shelf within the bus."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">VA</div>
+                        <div class="reviewer-info">
+                            <h4>Vrushali Amte</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Well its one of the best known cafes of Pune and it serves its purpose. The ambience no doubt its very good and food is good as well. We tried thai curry and rice, sandvich and bombay masala lemonade."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">TF</div>
+                        <div class="reviewer-info">
+                            <h4>Talk Over Food</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"From the moment you walk in, you're transported to the streets of London with their stunning London-themed interiors... Definitely a place worth visiting for the ambiance and delicious food!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Quick Info Banner -->
+    <div class="quick-info-banner">
+        <div class="info-item">
+            <span class="info-icon">📍</span>
+            <a href="https://maps.app.goo.gl/123456789" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">Virwani Plaza, Camp, Pune</a>
+        </div>
+        <div class="info-item">
+            <span class="info-icon">🕒</span>
+            <span>11:30 AM - 11:30 PM (Mon-Sun)</span>
+        </div>
+        <div class="info-item">
+            <span class="info-icon">📞</span>
+            <span>+91 80552 23351</span>
+        </div>
+    </div>
+
+    <!-- Clean Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>11 East Street Café</h3>
+                <p>A slice of London in Pune.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">The Vibe</a>
+                <a href="menu.html">Menu</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/11eaststreetcafe" target="_blank" rel="noopener noreferrer" class="social-icon" title="Follow us on Instagram">IG</a>
+                <a href="https://www.facebook.com/11eaststreetcafe" target="_blank" rel="noopener noreferrer" class="social-icon" title="Follow us on Facebook">FB</a>
+                <a href="https://maps.app.goo.gl/123456789" target="_blank" rel="noopener noreferrer" class="social-icon" title="Get Directions">MAP</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 11 East Street Café. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const scrollTrack = document.querySelector('.scroll-track');
+        const busScaleWrapper = document.getElementById('bus-scale-wrapper');
+        const bus = document.getElementById('anim-bus');
+        const busWheels = document.getElementById('anim-wheels');
+        const text = document.getElementById('anim-text');
+        const sign = document.querySelector('.real-sign-container');
+        const mainNav = document.getElementById('main-nav');
+        const navLogo = document.querySelector('.nav-logo');
+        const darkRedWash = document.getElementById('dark-red-wash');
+        const wheelsElements = document.querySelectorAll('.wheel');
+        
+        let ticking = false;
+        let startTranslateX = 0;
+        let startTranslateY = 0;
+        let originX = 0;
+        let originY = 0;
+        let dynamicMaxScale = 6.0;
+        let flightTranslateX = 0;
+        let flightTranslateY = 0;
+        let wheelsStartOffsetX = 0;
+        let wheelsStartOffsetY = 0;
+        let restingScale = 1.0;
+        let textBaseY = 0;
+        let initialized = false;
+
+        function calculateLayout() {
+            busScaleWrapper.style.transform = 'none';
+            bus.style.transform = 'none';
+            text.style.transform = 'none';
+            sign.style.transform = 'none';
+            navLogo.style.transform = 'none';
+            busWheels.style.transform = 'none';
+            
+            const signRect = sign.getBoundingClientRect();
+            const wrapperRect = busScaleWrapper.getBoundingClientRect();
+            
+            originX = (signRect.left + signRect.width / 2) - wrapperRect.left;
+            originY = (signRect.top + signRect.height / 2) - wrapperRect.top;
+            
+            const signCenterX = signRect.left + signRect.width / 2;
+            const signCenterY = signRect.top + signRect.height / 2;
+            const viewCenterX = window.innerWidth / 2;
+            const viewCenterY = window.innerHeight / 2;
+            
+            startTranslateX = viewCenterX - signCenterX;
+            startTranslateY = viewCenterY - signCenterY;
+            let isMobileCalc = window.innerWidth <= 768;
+            let heightScale = window.innerHeight / 850;
+            let widthScale = window.innerWidth / 420; // Ensure bus (380px) fits with padding
+            restingScale = isMobileCalc ? 0.6 : Math.min(1.0, heightScale, widthScale);
+            
+            busScaleWrapper.style.transformOrigin = `${originX}px ${originY}px`;
+            busScaleWrapper.style.transform = `translate3d(0, 0, 0) scale(${restingScale})`;
+            const finalSignRect = sign.getBoundingClientRect();
+            
+            textBaseY = 0;
+            
+            navLogo.style.transform = 'none';
+            const navBaseRect = navLogo.getBoundingClientRect();
+            
+            flightTranslateX = finalSignRect.left - navBaseRect.left;
+            flightTranslateY = (finalSignRect.top + finalSignRect.height/2) - (navBaseRect.top + navBaseRect.height/2);
+            
+            // On mobile (<= 768px), we disable the zoom-out and just let the CSS handle the scale
+            let isMobile = window.innerWidth <= 768;
+            
+            navLogo.style.transform = 'none';
+            
+            // Tires roll in from the right edge of the screen
+            wheelsStartOffsetX = window.innerWidth;
+            wheelsStartOffsetY = 30; // Ground level
+            
+            busScaleWrapper.style.transform = 'none';
+            navLogo.style.transformOrigin = 'left center';
+            
+            initialized = true;
+        }
+
+        function updateAnimation() {
+            if (!initialized) calculateLayout();
+
+            const rect = scrollTrack.getBoundingClientRect();
+            
+            // Calculate progress (0 to 1) through the scroll track
+            // We start when the top of the track hits the top of the viewport
+            let progress = 0;
+            if (window.scrollY > rect.top + window.scrollY) {
+                progress = (window.scrollY - (rect.top + window.scrollY)) / (rect.height - window.innerHeight);
+            }
+            
+            // Clamp progress
+            progress = Math.max(0, Math.min(1, progress));
+            
+            // Phase 1: 0.0 to 0.3 (Zoom out reveal)
+            let phase1 = Math.min(1, progress * (1 / 0.3));
+            
+            // Dead Zone: 0.5 to 0.7 (The bus, tires, and text remain completely still so the user can read)
+            
+            // Phase 2: 0.7 to 1.0 (Dismantle and red wash)
+            let phase2 = Math.max(0, (progress - 0.7) * (1 / 0.3));
+
+            // --- PHASE 1 MATH ---
+            let isMobile = window.innerWidth <= 768;
+            
+            // The bus remains at a constant size (no zoom out)
+            const scale = restingScale;
+            
+            const currentTranslateX = startTranslateX * (1 - phase1);
+            const currentTranslateY = startTranslateY * (1 - phase1);
+            
+            // The bus assembles during Phase 1, and dismantles during Phase 2.
+            let structuralProgress = Math.max(0, phase1 - phase2);
+            bus.style.setProperty('--scroll-progress', structuralProgress);
+
+            busScaleWrapper.style.transformOrigin = `${originX}px ${originY}px`;
+            busScaleWrapper.style.transform = `translate3d(${currentTranslateX}px, ${currentTranslateY}px, 0) scale(${scale})`;
+            
+            // Text entrance is tied to phase1
+            let textProgress = Math.max(0, (phase1 - 0.4) * (1 / 0.6));
+            let textEase = 1 - Math.pow(1 - textProgress, 3);
+            let phase1TextX = 120 * (1 - textEase);
+
+            // Phase 2: Text moves out to the left (desktop only) and upwards to fill empty space
+            let phase2TextEase = Math.pow(phase2, 1.5);
+            let phase2TextX = isMobile ? 0 : - (window.innerWidth * 0.25) * phase2TextEase; // Slide left by 25vw to reach center
+            let phase2TextY = isMobile ? - (window.innerHeight * 0.25) * phase2TextEase : 0; // Slide UP by 25vh only on mobile
+            
+            text.style.opacity = textProgress;
+            text.style.transform = `translate3d(${phase1TextX + phase2TextX}px, ${textBaseY + phase2TextY}px, 0)`;
+            // Change text color to white so it's readable over the dark red background
+            if (phase2 > 0.2) {
+                text.classList.add('light-mode');
+            } else {
+                text.classList.remove('light-mode');
+            }
+            
+            // --- TIRE ROLL MATH ---
+            // Active during the first half of the "empty scroll" (progress 0.3 to 0.5)
+            let wheelProgress = Math.max(0, Math.min(1, (progress - 0.3) * (1 / 0.2)));
+            let wheelX = 0;
+            let wheelY = 0;
+            let currentRotation = 0;
+            
+            if (wheelProgress === 0) {
+                // Phase 1: Hide tires while bus is assembling
+                wheelX = wheelsStartOffsetX;
+                wheelY = 30; // Start on the ground
+                busWheels.style.opacity = 0;
+            } else {
+                // Rolling on ground from off-screen right to the bus
+                let rollProgress = wheelProgress; // 0 to 1
+                
+                // Add a slight bounce as it speeds in
+                let bounce = 0;
+                if (rollProgress > 0.1 && rollProgress < 0.3) {
+                    bounce = -15 * Math.sin(((rollProgress - 0.1) / 0.2) * Math.PI);
+                }
+                
+                wheelX = wheelsStartOffsetX * (1 - rollProgress);
+                // Roll physically on the ground
+                wheelY = 30 + bounce;
+                
+                // Pop the wheels UP into the wheel wells at the very end of the roll!
+                if (rollProgress > 0.8) {
+                    let popProgress = (rollProgress - 0.8) / 0.2; // 0 to 1
+                    wheelY = 30 * (1 - popProgress);
+                }
+                
+                // Calculate physical rotations based on distance rolled (Diameter is ~70px)
+                let distanceToRoll = wheelsStartOffsetX;
+                let rotations = distanceToRoll / (Math.PI * 70);
+                let degrees = rotations * 360;
+                currentRotation = (1 - rollProgress) * degrees;
+                busWheels.style.opacity = 1;
+            }
+            
+            // Safely calculate rollProgress for z-index logic
+            let currentRollProgress = wheelProgress;
+            
+            // Add a heavy drop effect for the tires during the Phase 2 dismantle
+            let dismantleTireDrop = Math.pow(phase2, 2) * 800; // Tires fall through the floor!
+            
+            // Apply wheel transforms independently
+            busWheels.style.transform = `translate3d(${wheelX}px, ${wheelY + dismantleTireDrop}px, 0)`;
+            // Roll in front of the bus, then tuck behind the fenders right before sliding up
+            busWheels.style.zIndex = (currentRollProgress < 0.8) ? '10' : '2';
+            wheelsElements.forEach(w => w.style.transform = `rotate(-${currentRotation}deg)`);
+
+            // --- PHASE 2 MATH (Dismantle Flight & Dissolve) ---
+            
+            // Fade in dark red background
+            darkRedWash.style.opacity = phase2;
+            
+            // Dissolve the bus bus
+            bus.style.opacity = 1 - Math.pow(phase2, 1.5);
+            // Add a slight disjoint scale down effect as it dissolves
+            busScaleWrapper.style.transform += ` scale(${1 - (0.1 * phase2)})`;
+            
+            // The external navLogo flies from the bus position to its resting place (0,0)
+            const currentSignScale = restingScale - ((restingScale - 0.5) * phase2);
+            // Using Math.pow(phase2, 0.5) creates a rapid ease-out flight (moves fast initially)
+            const flightEase = Math.pow(phase2, 0.5);
+            
+            const currentNavX = flightTranslateX * (1 - flightEase);
+            const currentNavY = flightTranslateY * (1 - flightEase);
+            
+            navLogo.style.transform = `translate3d(${currentNavX}px, ${currentNavY}px, 0) scale(${currentSignScale})`;
+
+            // Seamless Navbar Handoff
+            // Exactly when phase2 begins, we instantly hide the nested bus sign and show the external navLogo.
+            // Because they perfectly overlap, the swap is entirely invisible to the user!
+            if (phase2 > 0) {
+                sign.style.opacity = 0;
+                mainNav.style.opacity = 1;
+                mainNav.style.transform = 'translateY(0)';
+            } else {
+                sign.style.opacity = 1;
+                mainNav.style.opacity = 0;
+                mainNav.style.transform = 'translateY(-100%)';
+            }
+
+            // Fade in the tickets only at the very end of Phase 2 (when bus is fully disassembled)
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks) {
+                let linkOpacity = phase2 > 0.8 ? (phase2 - 0.8) * 5 : 0;
+                navLinks.style.opacity = linkOpacity;
+                navLinks.style.pointerEvents = phase2 > 0.8 ? 'auto' : 'none';
+            }
+
+            // Toggle background glass only when we enter the landing page
+            if (phase2 >= 1) {
+                mainNav.classList.add('nav-scrolled');
+            } else {
+                mainNav.classList.remove('nav-scrolled');
+            }
+
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(updateAnimation);
+                ticking = true;
+            }
+        });
+        
+        // Trigger once on load to set initial state
+        window.addEventListener('resize', () => {
+            initialized = false;
+            updateAnimation();
+        });
+        
+        // Initialize immediately to prevent layout flicker
+        updateAnimation();
+
+        // Intersection Observer for Polaroid scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const polaroidObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-scroll');
+                    polaroidObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.hidden-scroll').forEach((el) => {
+            polaroidObserver.observe(el);
+        });
+
+    </script>
+</body>
+</html>

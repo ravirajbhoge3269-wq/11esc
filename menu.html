@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - 11 East Street Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body style="background-color: var(--bg-color);">
+    <!-- Static Navbar for subpages -->
+    <nav class="main-nav static-nav" id="main-nav">
+        <a href="index.html" class="nav-logo" style="text-decoration: none;">
+            <div class="black-panels">
+                <div class="black-panel left-panel">
+                    <div class="sign-11">11</div>
+                    <div class="yellow-line"></div>
+                </div>
+                <div class="black-panel right-panel">
+                    <div class="sign-east">EAST</div>
+                    <div class="sign-street">STREET</div>
+                    <div class="cafe-row">
+                        <div class="yellow-line"></div>
+                        <div class="sign-cafe">CAFÉ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="yellow-banner">LONDON IN PUNE</div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">The Vibe</a>
+            <a href="menu.html" class="nav-link active">Menu</a>
+        </div>
+    </nav>
+
+    <div class="vintage-menu-container">
+        <div class="menu-tabs">
+            <button class="vintage-tab active" onclick="showMenu('sec-1')">Starters & Burgers</button>
+            <button class="vintage-tab" onclick="showMenu('sec-2')">Pizza & Pasta</button>
+            <button class="vintage-tab" onclick="showMenu('sec-3')">Indian Mains</button>
+            <button class="vintage-tab" onclick="showMenu('sec-4')">Kebabs & Tikkas</button>
+            <button class="vintage-tab" onclick="showMenu('sec-5')">Chinese & Desserts</button>
+        </div>
+
+        <div class="vintage-menu-frame">
+            <!-- SECTION 1 -->
+            <div id="sec-1" class="menu-section active">
+                <h2 class="menu-category-title">Bites With Booze</h2>
+                <div class="menu-item has-polaroid" data-image="menu_crostini.webp" data-caption="Butter Chicken Crostini"><div class="menu-item-text"><div class="menu-item-name">Butter Chicken Crostini <span class="camera-icon">📷</span></div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_chicken_fingers.webp" data-caption="Peri Peri Fingers"><div class="menu-item-text"><div class="menu-item-name">Peri Peri Chicken Fingers <span class="camera-icon">📷</span></div><div class="menu-item-desc">With Paprika Mayo</div></div><div class="menu-item-price">380</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_fish_fingers.webp" data-caption="80's Fish Fingers"><div class="menu-item-text"><div class="menu-item-name">80's Fish Fingers <span class="camera-icon">📷</span></div><div class="menu-item-desc">With Mustard Tartare</div></div><div class="menu-item-price">440</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_nachos.webp" data-caption="Insane Nachos"><div class="menu-item-text"><div class="menu-item-name">Insane Nachos <span class="camera-icon">📷</span></div></div><div class="menu-item-price">390</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_poutine.webp" data-caption="Classic Poutine"><div class="menu-item-text"><div class="menu-item-name">Poutine <span class="camera-icon">📷</span></div><div class="menu-item-desc">French Fries with Cheese Curd</div></div><div class="menu-item-price">380</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_onion_rings.webp" data-caption="Crispy Onion Rings"><div class="menu-item-text"><div class="menu-item-name">Crispy Onion Rings <span class="camera-icon">📷</span></div><div class="menu-item-desc">With Inhouse Spice</div></div><div class="menu-item-price">380</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_cheese_balls.webp" data-caption="Jalapeno Cheese Balls"><div class="menu-item-text"><div class="menu-item-name">Drunk Chilli Jalapeno Cheese Balls <span class="camera-icon">📷</span></div><div class="menu-item-desc">With Beer Sauce</div></div><div class="menu-item-price">390</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_prawn_toast.webp" data-caption="Prawn Sesame Toast"><div class="menu-item-text"><div class="menu-item-name">Prawn Sesame Toast <span class="camera-icon">📷</span></div><div class="menu-item-desc">With Schezuan Sauce</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_tikka_chaat.webp" data-caption="Naga Chicken Tikka Chaat"><div class="menu-item-text"><div class="menu-item-name">Naga Chicken Tikka Chaat <span class="camera-icon">📷</span></div></div><div class="menu-item-price">350</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Vegetable Sticks</div><div class="menu-item-desc">With a Chilled Hung Curd Dip</div></div><div class="menu-item-price">300</div></div>
+
+                <h2 class="menu-category-title">Sandwiches</h2>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">The Resort Club Sandwich</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Basil Pesto Chicken & Feta</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">BBQ Pulled Chicken Open Sandwich</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Grilled Spinach & Cottage Cheese</div><div class="menu-item-desc">With Tomatoes & Cucumber</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Herbed Mushroom & Cream Cheese</div></div><div class="menu-item-price">410</div></div>
+
+                <h2 class="menu-category-title">The Bowl Diner</h2>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Burmese Khowsuey</div></div><div class="menu-item-price">540 | 590 | 640</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Spicy Veg Garlic Ramen</div><div class="menu-item-desc">Vegetable broth, garlic, chilli, roasted broccoli, bellpeppers, bok choy, tofu</div></div><div class="menu-item-price">610</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Classic Chicken Shoyu Ramen</div><div class="menu-item-desc">Soy based broth, grilled chicken, egg, nori, bamboo shoot, scallion</div></div><div class="menu-item-price">630</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Korean Chicken Bowl</div><div class="menu-item-desc">With Coconut Rice</div></div><div class="menu-item-price">530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">The Burrito Bowl</div><div class="menu-item-desc">Rice, kidney beans, nacho crisps, pico de gallo, cheese, sour cream</div></div><div class="menu-item-price">470 | 530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Thai Red Curry</div><div class="menu-item-desc">With Sticky Rice</div></div><div class="menu-item-price">460 | 530 | 590</div></div>
+
+                <h2 class="menu-category-title">The Burger Factory</h2>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Crackling Crispy Chicken Burger</div><div class="menu-item-desc">Buttermilk fried chicken, lettuce, burger sauce, gherkins & caramelized onions</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_burger.webp" data-caption="Gourmet Chicken Burger"><div class="menu-item-text"><div class="menu-item-name">Gourmet Chicken Burger <span class="camera-icon">📷</span></div><div class="menu-item-desc">Grilled chicken, lettuce, spicy mayo, mustard sauce, gherkins, jalapenos</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Fish-O-11 Burger</div><div class="menu-item-desc">Batter fried fish & pickled tartare sauce</div></div><div class="menu-item-price">490</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Potato Head Burger</div><div class="menu-item-desc">Potato and cheese patty, spicy mayo, lettuce, coleslaw, gherkins</div></div><div class="menu-item-price">380</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mad Veg Burger</div><div class="menu-item-desc">Coleslaw, lettuce, tomatoes, burger sauce, minced vegetable patty</div></div><div class="menu-item-price">430</div></div>
+            </div>
+
+            <!-- SECTION 2 -->
+            <div id="sec-2" class="menu-section">
+                <h2 class="menu-category-title">Pizza</h2>
+                <div class="menu-item has-polaroid" data-image="menu_pizza.webp" data-caption="Classic Margherita"><div class="menu-item-text"><div class="menu-item-name">Margherita <span class="camera-icon">📷</span></div><div class="menu-item-desc">Tomato and cheese pizza with basil leaves and olive oil</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">The Superhero</div><div class="menu-item-desc">Spinach, babycorn, sun-dried tomatoes, olives, marinara sauce</div></div><div class="menu-item-price">440</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Veggie Oomph</div><div class="menu-item-desc">Onions, olives, mushrooms, peppers and herbs</div></div><div class="menu-item-price">440</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Shakahari Tikka</div><div class="menu-item-desc">Paneer tikka, barbecued green pepper, onion, garlic</div></div><div class="menu-item-price">440</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Paprika Chicken Pizza</div><div class="menu-item-desc">Chicken marinated in smoked paprika spice, sliced chilli peppers</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Alfredo Pizza</div><div class="menu-item-desc">Mushrooms / Chicken with cheese sauce, spinach, roasted garlic</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">BBQ Tennessee</div><div class="menu-item-desc">Smoked chicken, glazed onion in Jack Daniels BBQ sauce</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">The Daring Chicken Pizza</div><div class="menu-item-desc">Chicken in sriracha. Extremely hot. Extremely spicy!</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">1947</div><div class="menu-item-desc">Half and Half - Butter Chicken & Mutton Kheema</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chilly Chicken Pizza</div><div class="menu-item-desc">11 ESC's signature chilly chicken on a pizza</div></div><div class="menu-item-price">560</div></div>
+
+                <h2 class="menu-category-title">Salad</h2>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mustard Phone Booth</div><div class="menu-item-desc">Romaine, iceberg, bellpeppers, nuts in honey mustard vinaigrette</div></div><div class="menu-item-price">390 | 430 | 530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Surely Ceaser's Salad</div><div class="menu-item-desc">Iceberg, croutons in a ceaser's dressing with shaved parmesan</div></div><div class="menu-item-price">390 | 430 | 530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Asian Crunchy Salad</div><div class="menu-item-desc">Sliced vegetables in a sriracha peanut vinaigrette</div></div><div class="menu-item-price">390 | 430 | 530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">The Ranch Brothers</div><div class="menu-item-desc">Corn, tomatoes, romaine, tortilla chips, onion with ranch</div></div><div class="menu-item-price">390 | 430 | 530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Watermelon, Feta, Rocket Leaves</div><div class="menu-item-desc">In a coriander garlic vinaigrette</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Oldschool Chicken Salad</div><div class="menu-item-desc">Chicken, red onion, cucumber and tomatoes</div></div><div class="menu-item-price">420</div></div>
+
+                <h2 class="menu-category-title">The Pasta Bar</h2>
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-bottom: 20px;">Choose Your Pasta: Spaghetti / Penne</p>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Arrabiata Sauce</div><div class="menu-item-desc">Herbed Spicy Tomato Sauce</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Pesto Sauce</div><div class="menu-item-desc">Green sauce made of basil, pinenuts and garlic</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Karnevella Sauce</div><div class="menu-item-desc">Creamed tomato sauce, the popular 'pink' sauce</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Spaghetti Bolognese</div><div class="menu-item-desc">Minced lamb meat</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Penne with Prawns</div><div class="menu-item-desc">In vodka cream sauce</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Spaghetti Aglio Olio</div><div class="menu-item-desc">Garlic, olive oil and parsley</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Lasagne</div><div class="menu-item-desc">Layered sheets of pasta</div></div><div class="menu-item-price">510 | 560 | 610</div></div>
+
+                <h2 class="menu-category-title">Fondue Pot</h2>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Melting Cheese Fondue</div></div><div class="menu-item-price">610</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Smoked Paprika Fondue</div></div><div class="menu-item-price">610</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Makhani Fondue</div></div><div class="menu-item-price">730</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Jalapeno & Dukkha Spice Fondue</div></div><div class="menu-item-price">730</div></div>
+            </div>
+
+            <!-- SECTION 3 -->
+            <div id="sec-3" class="menu-section">
+                <h2 class="menu-category-title">Kebab Platters</h2>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Bageecha Platter</div><div class="menu-item-desc">Paneer Achari, Paneer Sooa, Subz Mulaayam Seekh, Tandoori Aloo</div></div><div class="menu-item-price">1300</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Murgh Platter</div><div class="menu-item-desc">Murgh Sholey Kebab, Murgh Cheese Chilly Seekh, Schezuan Kebab, Murgh Tikka</div></div><div class="menu-item-price">1700</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Carnivore's Platter</div><div class="menu-item-desc">Tandoori Chkn, Schezuan Chilli Kebab, Murgh Tikka, Sholey Kebab, Seekh Kebab, Mango Pickle Fish, Lasooni Jhinga</div></div><div class="menu-item-price">2100</div></div>
+
+                <h2 class="menu-category-title">Indian Main Course</h2>
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-bottom: 20px;">Vegetarian</p>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Paneer Makhani</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Paneer Tikka Masala</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Adraki Dhaniya Paneer</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Subz-E-Ishq</div></div><div class="menu-item-price">370</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mushroom Capsicum Masala</div></div><div class="menu-item-price">370</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Palak Kofta Curry</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Lasooni Palak</div></div><div class="menu-item-price">390</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">11's Veg Kadhai</div></div><div class="menu-item-price">390</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Soya Tikka Masala</div></div><div class="menu-item-price">380</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Dal-E-Nawab (Makhani)</div></div><div class="menu-item-price">320</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Dal-E-Sikander (Tadka)</div></div><div class="menu-item-price">290</div></div>
+
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-top: 30px; margin-bottom: 20px;">Non-Vegetarian</p>
+                <div class="menu-item has-polaroid" data-image="menu_butter_chicken.webp" data-caption="Authentic Butter Chicken"><div class="menu-item-text"><div class="menu-item-name">Butter Chicken <span class="camera-icon">📷</span></div></div><div class="menu-item-price">460</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chicken Tikka Masala</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Murgh Achari Pudina Adraki</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Murgh Musallam (Half / Full)</div></div><div class="menu-item-price">750 | 1200</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Bachelors Chicken Curry</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Old Monk Chicken</div></div><div class="menu-item-price">530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">XXX Chicken</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Punjab Cream Kalimirch Chicken</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Gosht Roganjosh</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mutton Kosha</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Laal Maas</div></div><div class="menu-item-price">580</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Vintage Mutton Curry</div></div><div class="menu-item-price">580</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Kheema Pav</div></div><div class="menu-item-price">580</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Fish Tikka Curry</div></div><div class="menu-item-price">580</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Pomfret Masala</div></div><div class="menu-item-price">580</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Surmai Fish Curry</div></div><div class="menu-item-price">580</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Tawa Jhinga Chatpatta</div></div><div class="menu-item-price">580</div></div>
+            </div>
+
+            <!-- SECTION 4 -->
+            <div id="sec-4" class="menu-section">
+                <h2 class="menu-category-title">Kebabs & Tikkas</h2>
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-bottom: 20px;">Vegetarian</p>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Classic Paneer Tikka</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Paneer Achari Jehangiri Tikka</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Hari Mirch Paneer Tikka</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Makhmali Paneer Tikka</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Trio Tandoori Aloo</div></div><div class="menu-item-price">380</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Stuffed Malai Mushrooms</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Awadhi Dahi Kebab</div></div><div class="menu-item-price">370</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Subz Mulaayam Seekh Kebab</div></div><div class="menu-item-price">380</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mushroom Galauti</div></div><div class="menu-item-price">410</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Tandoori Soya Chaap</div></div><div class="menu-item-price">390</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Malai Soya Chaap</div></div><div class="menu-item-price">390</div></div>
+
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-top: 30px; margin-bottom: 20px;">Non-Vegetarian</p>
+                <div class="menu-item has-polaroid" data-image="menu_kebabs.webp" data-caption="Sizzling Tandoori"><div class="menu-item-text"><div class="menu-item-name">The Tandoori Chicken (Half/Full) <span class="camera-icon">📷</span></div></div><div class="menu-item-price">410 | 740</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Classic Murgh Tikka</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Schezuan Chilly Kebab</div></div><div class="menu-item-price">460</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Murgh Banjara Kebab</div></div><div class="menu-item-price">460</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Murgh Cheese Chilly Seekh Kebab</div></div><div class="menu-item-price">460</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Murgh Malai Matka Kebab</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Bhatti Da Murgh</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chicken Garlic Tikka</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Thai Chicken Kebab with Red Eye Chilli</div></div><div class="menu-item-price">530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chicken Kalmi Chop</div></div><div class="menu-item-price">530</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mutton Seekh Kebab</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mutton Galauti Kebab</div></div><div class="menu-item-price">610</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Raan-E-Sikander</div></div><div class="menu-item-price">2100</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Curry Leaf Spiced Fish Tikka</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Tandoori Pomfret</div></div><div class="menu-item-price">750</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mango Pickle Fish Tikka</div></div><div class="menu-item-price">510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Surmai Fish Tikka</div></div><div class="menu-item-price">650</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Lasooni Jhinga</div></div><div class="menu-item-price">590</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Tandoori Prawns in Schezuan Sauce</div></div><div class="menu-item-price">590</div></div>
+            </div>
+
+            <!-- SECTION 5 -->
+            <div id="sec-5" class="menu-section">
+                <h2 class="menu-category-title">Chinese</h2>
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-bottom: 20px;">Vegetarian</p>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Paneer Hunan</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Paneer Chilly</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Honey Chilli Potato</div></div><div class="menu-item-price">370</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Mushroom Ginger Chilly</div></div><div class="menu-item-price">370</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Fiery Veg Crispy</div></div><div class="menu-item-price">370</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Veg Spring Rolls</div></div><div class="menu-item-price">370</div></div>
+
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-top: 30px; margin-bottom: 20px;">Chicken</p>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chicken Chilly</div><div class="menu-item-desc">In Green Chilly Vinegar Sauce</div></div><div class="menu-item-price">460</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chicken Hunan</div></div><div class="menu-item-price">460</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chicken in Manchurian Sauce</div></div><div class="menu-item-price">460</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Spicy Chicken in Mala Sauce</div></div><div class="menu-item-price">430</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chicken Spring Rolls</div></div><div class="menu-item-price">410</div></div>
+
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-top: 30px; margin-bottom: 20px;">Seafood</p>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Fish on Fire</div></div><div class="menu-item-price">540</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Devil Prawns</div></div><div class="menu-item-price">560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Prawns in Black Pepper Sauce</div></div><div class="menu-item-price">590</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Prawns in Coriander Sauce</div></div><div class="menu-item-price">590</div></div>
+
+                <p style="color: rgba(255,255,255,0.7); text-align: center; margin-top: 30px; margin-bottom: 20px;">Rice & Noodles</p>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Fried Rice</div></div><div class="menu-item-price">360 | 390 | 510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Schezuan Fried Rice</div></div><div class="menu-item-price">380 | 430 | 510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Triple Schezuan Rice</div></div><div class="menu-item-price">430 | 460 | 560</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Hakka Noodles</div></div><div class="menu-item-price">380 | 430 | 510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Schezuan Hakka Noodles</div></div><div class="menu-item-price">390 | 410 | 510</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Chilli Garlic Noodles</div></div><div class="menu-item-price">390 | 410 | 510</div></div>
+
+                <h2 class="menu-category-title">Desserts</h2>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Cookie Dough Brownie</div></div><div class="menu-item-price">260</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Nutella Fudge Brownie</div></div><div class="menu-item-price">280</div></div>
+                <div class="menu-item has-polaroid" data-image="menu_brownie.webp" data-caption="Decadent Walnut Brownie"><div class="menu-item-text"><div class="menu-item-name">Chocolate Walnut Brownie <span class="camera-icon">📷</span></div><div class="menu-item-desc">Add a scoop of ice cream at ₹50/-</div></div><div class="menu-item-price">240</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Nutella Cheesecake</div></div><div class="menu-item-price">300</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Blueberry Cheesecake</div></div><div class="menu-item-price">280</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Matilda's Chocolate Cake</div></div><div class="menu-item-price">300</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">London's Sundae</div></div><div class="menu-item-price">320</div></div>
+                <div class="menu-item"><div class="menu-item-text"><div class="menu-item-name">Sizzling Chocolate Brownie with Ice Cream</div></div><div class="menu-item-price">410</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Info Banner -->
+    <div class="quick-info-banner">
+        <div class="info-item">
+            <span class="info-icon">📍</span>
+            <a href="https://maps.app.goo.gl/123456789" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">Virwani Plaza, Camp, Pune</a>
+        </div>
+        <div class="info-item">
+            <span class="info-icon">🕒</span>
+            <span>11:30 AM - 11:30 PM (Mon-Sun)</span>
+        </div>
+        <div class="info-item">
+            <span class="info-icon">📞</span>
+            <span>+91 80552 23351</span>
+        </div>
+    </div>
+
+    <!-- Clean Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>11 East Street Café</h3>
+                <p>A slice of London in Pune.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">The Vibe</a>
+                <a href="menu.html">Menu</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/11eaststreetcafe" target="_blank" rel="noopener noreferrer" class="social-icon" title="Follow us on Instagram">IG</a>
+                <a href="https://www.facebook.com/11eaststreetcafe" target="_blank" rel="noopener noreferrer" class="social-icon" title="Follow us on Facebook">FB</a>
+                <a href="https://maps.app.goo.gl/123456789" target="_blank" rel="noopener noreferrer" class="social-icon" title="Get Directions">MAP</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 11 East Street Café. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Polaroid Popup Overlay -->
+    <div id="polaroid-overlay" class="polaroid-overlay">
+        <div class="polaroid-frame" id="polaroid-frame">
+            <img id="polaroid-img" src="" alt="Menu Item">
+            <div id="polaroid-caption" class="polaroid-caption"></div>
+        </div>
+    </div>
+
+    <script>
+        function showMenu(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.menu-section').forEach(sec => {
+                sec.classList.remove('active');
+            });
+            document.querySelectorAll('.vintage-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // Show target section
+            document.getElementById(sectionId).classList.add('active');
+            // Add active to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // Polaroid Logic
+        const overlay = document.getElementById('polaroid-overlay');
+        const img = document.getElementById('polaroid-img');
+        const caption = document.getElementById('polaroid-caption');
+        const frame = document.getElementById('polaroid-frame');
+        
+        document.querySelectorAll('.has-polaroid').forEach(item => {
+            const imageSrc = item.getAttribute('data-image');
+            const imageCaption = item.getAttribute('data-caption');
+
+            const showPolaroid = () => {
+                img.src = imageSrc;
+                caption.innerText = imageCaption;
+                overlay.classList.add('active');
+                const rot = (Math.random() * 6) - 3; 
+                frame.style.transform = `scale(1) rotate(${rot}deg)`;
+            };
+
+            // Mobile Click
+            item.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.stopPropagation();
+                    showPolaroid();
+                }
+            });
+
+            // Desktop Hover
+            item.addEventListener('mouseenter', () => {
+                if (window.innerWidth > 768) {
+                    showPolaroid();
+                }
+            });
+
+            item.addEventListener('mouseleave', () => {
+                if (window.innerWidth > 768) {
+                    overlay.classList.remove('active');
+                    frame.style.transform = `scale(0.8) rotate(0deg)`;
+                }
+            });
+        });
+
+        // Close on click anywhere in overlay (for mobile mostly)
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('active');
+            frame.style.transform = `scale(0.8) rotate(0deg)`;
+        });
+    </script>
+</body>
+</html>
